@@ -104,7 +104,7 @@ def ShowColorText(nColor, szText, bNewLine = True):
 # print usage
 ########################################
 def PrintUsage():
-    ShowInfo("Usage: python gen_mail_office.py")
+    ShowInfo("Usage: python <tool name>.py")
 # end of print usage
 
 ########################################
