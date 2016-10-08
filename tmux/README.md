@@ -13,6 +13,6 @@
 * 縮寫
   * C : ctrl
 
-## vim mode
+## copy mode (commands as vim)
 * / : search down
 * ? : search up
