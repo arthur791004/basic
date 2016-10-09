@@ -6,9 +6,9 @@
   ```js
     mongoose.connect('mongodb://host/db');
   ```
-* models and scheme
+* models and schema
   * Models are defined by passing a Schema instance to mongoose.model.
-  * create scheme
+  * create schema
   ```js
     const UserSchema = new mongoose.Schema({
       email: {
