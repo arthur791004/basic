@@ -14,7 +14,7 @@
 * cat /etc/*-release
   * 查看目前作業系統類型版本
 * getconf LONG_BIT
-  * 查詢位元
+  * 查詢位元
 ## commands
 
 ## reference
