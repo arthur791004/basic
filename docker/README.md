@@ -30,6 +30,8 @@
 * docker start/stop/restart [container] 
 * docker inspect [container]
 * docker images
+* docker rm [container]
+* docker rmi [IMAGE]
 
 ## dockerfile
 * concept
