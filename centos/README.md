@@ -15,6 +15,16 @@
   * 查看目前作業系統類型版本
 * getconf LONG_BIT
   * 查詢位元
+
 ## commands
+* chkconfig <service> on
+  * 設定服務開機自動啟動
+* setenforce/getenforce
+  * 關閉 SELinux
+
+## files
+* /etc/rc.local
+  * 開機時自動執行的 scripts
+  * This script will be executed *after* all the other init scripts
 
 ## reference
