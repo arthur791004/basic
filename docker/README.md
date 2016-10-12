@@ -7,28 +7,28 @@
    * -S: Show error. With -s, make curl show errors when they occur
    * -L: Follow redirects
 2. sudo systemctl enable docker.service
-3. usermod -aG docker <username>
+3. usermod -aG docker [username]
 
 ## commands
-* docker build -t <tag> <PATH>
+* docker build -t [Name] [PATH]
   * --tag: Name and optionally a tag in the 'name:tag' format
   * --file: Name of the Dockerfile (Default is 'PATH/Dockerfile')
-* docker run --name <name> --publish <host>:<container> -d <IMAGE>
+* docker run --name [name] --publish [host]:[container] -d [IMAGE]
   * --detach: Run container in background and print container ID
   * --env: Set environment variables
   * --env-file: Read in a file of environment variables
   * --expose: Expose a port or a range of ports
   * --hostname: Container host name
-  * --link <container>:<alias>: Add link to another container
+  * --link [container]:[alias]: Add link to another container
   * --name: Assign a name to the container
-  * --publish <host>:<container>: Publish a container's port(s) to the host (default [])
-  * --volume <host>:<container>: Bind mount a volume
+  * --publish [host]:[container]: Publish a container's port(s) to the host (default [])
+  * --volume [host]:[container]: Bind mount a volume
 * docker ps
-* docker logs <container>
-* docker exec -ti <container> bash
+* docker logs [container]
+* docker exec -ti [container] bash
   * connect to bash for docker container
-* docker start/stop/restart <container>
-* docker inspect <container>
+* docker start/stop/restart [container] 
+* docker inspect [container]
 * docker images
 
 ## dockerfile
@@ -37,7 +37,7 @@
     * 使用 Docker container，直接進入 container 內部，使用命令列增刪改，再匯出成 image
     * 使用 Dockerfile，將增刪改的動作文本化，再建置成 image。Dockerfile 的方式容易調整與管理，也是推薦的方式。
 * basic
-  * FROM <base image>
+  * FROM [base image]
     * 基於某個已存在的 image 進行二次開發
   * MAINTAINER 
     * 記載誰寫的。
@@ -52,9 +52,9 @@
     * 能將本機端的檔案或目錄，複製到 image 內
   * ENTRYPOINT
     * An ENTRYPOINT allows you to configure a container that will run as an executable.
-    * 指定 Docker image 運行成 instance 時，要執行的指令或檔案
-    * formats
-      * ENTRYPOINT ["executable", "param1", "param2"] (the preferred exec form) 
+    * 指定 Docker image 運行成 instance 時，要執行的指令或檔案
+    * formats
+      * ENTRYPOINT \["executable", "param1", "param2"\] (the preferred exec form) 
       * ENTRYPOINT command param1 param2 (shell form) 
 * advance
   * ONBUILD
@@ -65,8 +65,8 @@
     * The main purpose of a CMD is to provide defaults for an executing container.
     * docker run 命令如果指定了參數會把 CMD 裡的參數覆蓋
     * formats
-      * CMD ["executable","param1","param2"] (exec form, this is the preferred form): 運行一個可執行的文件並提供參數
-      * CMD ["param1","param2"] (as default parameters to ENTRYPOINT): 為 ENTRYPOINT 指定參數
+      * CMD \["executable","param1","param2"\] (exec form, this is the preferred form): 運行一個可執行的文件並提供參數
+      * CMD \["param1","param2"\] (as default parameters to ENTRYPOINT): 為 ENTRYPOINT 指定參數
       * CMD command param1 param2 (shell form): 是以 "/bin/sh -c" 的方法執行的命令
   * EXPOSE
 * variable
@@ -84,7 +84,7 @@
     * 當然還有更好的做法，例如使用 Shell scripts 執行複雜的指令。
 * others
   * 查看 image 或 container 的 LABEL
-    * docker inspect <IMAGE or CONTAINER_NAME>
+    * docker inspect [IMAGE or CONTAINER_NAME]
   * 統計 image 的 layer 數量
     * docker history IMAGE_NAME | wc -l
 * notes
