@@ -5,6 +5,10 @@
 * body-parser 是一個 HTTP request body 解析的 middleware，使用這個 module 可以解析 json, raw, text, urlencoded 格式的 request body
 * Express 框架中就是使用這個 module 做為 request body 中解析的 middleware。
 
+## util
+* require('util').format
+  * format string
+
 ## Reference
 * body parser
   * http://itbilu.com/nodejs/npm/EkDXWklVb.html
