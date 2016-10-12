@@ -23,7 +23,7 @@
   * 關閉 SELinux
 
 ## files
-* /etc/rc.local
+* /etc/rc.d/rc.local
   * 開機時自動執行的 scripts
   * This script will be executed *after* all the other init scripts
 * /etc/sysconfig/selinux
