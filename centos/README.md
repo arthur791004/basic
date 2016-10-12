@@ -26,5 +26,7 @@
 * /etc/rc.local
   * 開機時自動執行的 scripts
   * This script will be executed *after* all the other init scripts
-
+* /etc/sysconfig/selinux
+  * 設定 selinux
+  
 ## reference
