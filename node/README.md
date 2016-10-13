@@ -13,3 +13,5 @@
 * body parser
   * http://itbilu.com/nodejs/npm/EkDXWklVb.html
   * http://hao.jser.com/archive/9322/
+* module pattern
+  * https://my.oschina.net/chenzhiqiang/blog/129783
