@@ -86,7 +86,7 @@
     * 當然還有更好的做法，例如使用 Shell scripts 執行複雜的指令。
 * others
   * 查看 image 或 container 的 LABEL
-    * docker inspect \<IMAGE or CONTAINER_NAME>
+    * docker inspect \<IMAGE or CONTAINER_NAME>
   * 統計 image 的 layer 數量
     * docker history IMAGE_NAME | wc -l
 * notes
