@@ -35,7 +35,8 @@ module.exports = (function() {
     }
   }
 
-  return <ModuleName>
+  return <ModuleName>;
+
   /**
    * Functions
    */
