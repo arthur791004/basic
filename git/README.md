@@ -40,3 +40,4 @@
 
 ## reference
 * https://www.slideshare.net/secret/retavuvmp0Vbun
+* http://julianchu.net/2015/11/18-git.html
