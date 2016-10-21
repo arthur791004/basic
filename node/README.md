@@ -9,7 +9,30 @@
 * require('util').format
   * format string
 
+## module.exports v.s exports
+* example
+  ```js
+  // test.js
+  var module_exports_something = require('./module_exports_something');
+  var exports_something = require('./exports_something');
+  
+  module_exports_something();  // works
+  exports_something();         // failed
+  
+  // module_exports_something.js
+  module.exports = function() {
+    ...
+  }
+  
+  // exports_something.js
+  exports = function() {
+    ...
+  }
+  ```
+
 ## Reference
+* basic
+  * http://dreamerslab.com/blog/tw/node-js-basics/
 * body parser
   * http://itbilu.com/nodejs/npm/EkDXWklVb.html
   * http://hao.jser.com/archive/9322/
