@@ -9,6 +9,8 @@
 * require('util').format
   * format string
 
+## events
+
 ## module.exports v.s exports
 * example
   ```js
