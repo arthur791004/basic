@@ -1,0 +1,153 @@
+# JSDC 2016
+
+## How to adapt to change & exploring Vue.js (Blake Newman)
+
+### JS is Fragile
+* Modularisation
+* Maintainability
+* Scalability
+* LIFT Principle
+  * Locate
+  * Identify
+  * Flat - 7 files in the folder (?)
+  * T-DRY(try to stick to dry) (DRY: Don't-Repeat-Yourself)
+### How can we adapt
+* Dependency Management
+  * wrong
+  ```json
+  ^1.0.0: 1.0.0 <= 2.0.0
+  ```
+  * Use X-Ranges or Direct Version
+  ```json
+  1.0.x: 1.0.0 <= 1.1.0
+  1.0.17: 1.0.17
+  ```
+  * keep in control
+  ```shell
+  $ npm i -g npm-check-updates
+  $ ncu
+    eslint              2.12.x  →  2.13.x
+    vue-hot-reload-api   1.3.x  →   2.0.x
+  ```
+* Sacrificial Architecture
+  * http://martinfowler.com/bliki/SacrificialArchitecture.html
+  * https://medium.com/@TheStrazz86/sacrificial-architecture-in-web-development-3926c0593fc8#.sn2a2razc
+* Problems are with Frameworks
+  * Choose your framework as if you will need to change it after six months
+  * Don't be a slave to Frameworks
+* Development Experience
+  * The best code that you can write now, probably won't be in a few years
+  * The best way to cope with change is to increase productivity
+    * HMR
+  * Hiring people to write is not the same as hiring people to design and build durable, usable, dependable software.
+* Vue.js
+  * What does Vue deliver?
+    * Library for the View layer
+    * Components with reactivity
+    * Extendable via plugins
+    * Lightweight
+    * Simplicity
+    * Testable
+  * How does Vue.js work?
+    * Reactive data-binding system for a  Data-driven view
+    * DOM in sync with data
+    * Object.defineProperty
+    * Component System helps with small abstraction layer
+    * Component loosely modeled after the Web Components spec
+    * Implements the Slot API and the special attribute is
+  * What is Reactivity?
+    * Vue.js works with Sacrificial Arcitecture!
+    * Business logic is simple!
+* Vue.js Components
+  ```
+  // demo.component.js
+  Vue.component('demo-component', {
+      template: '<div> {{ msg }} </div>',
+      // Data initialization
+      data() {
+          return {
+              msg: 'Vue is cool'
+          };
+      }, 
+      computed: { }, 
+      methods: { }, 
+      events: { },
+      ready() {
+          // Execute logic on ready hook
+      },
+  });
+
+  // demo.html
+  <demo-component></demo-component>
+  ```
+
+## GraphQL 經驗分享(Steven Su)
+* F8 App = react + redux + relay + GraphQL
+* 問題
+  * 代碼多
+  * 接口一堆
+  * 併發 request 很麻煩
+  * 參數好難傳
+* Example of GraphQL
+  ```
+  // query
+  {
+    me {
+      id
+      email
+      name
+    }
+  }
+  
+  // response
+  {
+    "data": {
+      "me": {
+        "id": 1,
+        "email": "xp@fandora.co",
+        "name": "xpsteven"
+      }
+    }
+  }
+  ```
+* express-graphql
+  * schema 類似 router
+  * field 就想成端點吧
+  * promise
+  * type 定義回傳資料結構
+  * input/output 都是 strong type
+  * query v.s mutatino
+    * query: 拉資料, 平行處理
+    * mutation: 更新資料, 序列處理 
+  * cache 處理
+    1. 改寫 res.end
+    2. 透過 context 把 req 傳進 resolver
+    3. 透過 req 來指名是否寫入 cache
+    4. cache key 用 req.body.query + req.body.variables
+  * 安全性
+    * 思維: 從源頭開始
+    * req.acl 來計算可以讀取的欄位
+
+
+## ThinkJS - 使用 ES2015+ 特性开发 Node.js 项目 (李成银)
+
+## 使用 Angular 2 與 Firebase 實現 Serverless 網站架構(Will 保哥)
+
+## 淺談網站自動化測試 - 以 WebdriverIO 框架為例(劉艾霖)
+
+## Universal JavaScript?(洪名辰)
+
+## How I learned to stop worrying and love the Polymer toolbox by Monica Dinculescu (Google Inc.)
+
+## Reactive Programming In Action with RxJS 5(Paul Taylor)
+
+## NIME: 使用 nodejs 快快樂樂開發輸入法( Lee)
+
+## CodexJS: a conditional module bundler (Alex Liu)
+
+## Date Visualization performance optmazation(Jim)
+
+## 親愛的，我們來土炮一個 Google Docs 吧！(Fred Chien)
+
+## Reference
+* https://hackfoldr.org/jsdc2016
