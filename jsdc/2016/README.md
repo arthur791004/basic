@@ -131,13 +131,113 @@
 
 ## ThinkJS - 使用 ES2015+ 特性开发 Node.js 项目 (李成银)
 
+### Koa
+* 提供基本功能
+* 一套 middleware 機制
+* 洋蔥模型
+* Problems
+  * 自動編譯 + 更新
+  * 配置管理
+  * 項目結構管理
+  * router 管理
+  * middleware 和 module 的選用
+  * 性能, 安全等問題
+  * 錯誤處理
+
+### ThinkJS
+* 直接使用 ES2015+ 的特性
+* 用 async/await + Promise 處理異部問題
+* 自動編譯 + 更新
+* 詳細的 log
+  * HTTP access log ===> 可以用 express middleware: morgan 做到
+  * SQL
+  * error
+* cli 和 定時任務
+* 斷點測試
+* 其他
+  * 支持 mysql, mongo, postgresql 等 db
+  * 支持 socket.io, socketJS 等 websocket
+  * 支持國際化和多主題
+  * 支持 AOP 編程
+  * 支持 RESTful API
+### Koa v.s ThinkJS
+* Koa
+  * 核心就 4 個文件，提供了 middleware 機制
+  * 比較靈活，但 middleware 要自己找
+* ThinkJS
+  * 封裝了很多常用的功能
+  * 提供 middleware 和 adapter 機制
+  * 固定的項目結構目錄
+
 ## 使用 Angular 2 與 Firebase 實現 Serverless 網站架構(Will 保哥)
+* demo firebase(serverless) + angular2 CRUD
 
 ## 淺談網站自動化測試 - 以 WebdriverIO 框架為例(劉艾霖)
+
+### 網站自動化測試
+* 透過自動化的方式，去控制流程
+* 比較實際結果與預期結果之間的差異
+* 可反覆執行
+* 前端測試框架挑選準則
+  * 資源：功能、工具、文件
+  * 擴充：架構容不容易擴充
+  * 永續性：PR 多不多
+  * 開發者面向：容不容易debug
+  * webdriver.io v.s protractor v.s nightwatch
+### Webdriver.IO 介紹
+* 支援 Java, C#, Ruby, Python, JS
+* nightwatch <---> request <---> webdriver (selenium server) <---> browser
+* pros
+  * 高度模組化
+  * extendable
+  * custom reporter
+  * custom commands
+  * Plugin
+### Getting Started
+
+### 框架為我們做了什麼?
+* 簡化API 
+  * API介紹
+  * API這麼多如何使用 => 撰寫測試三步驟
+    * 操作行為
+    * 取得值
+    * 操作結果
+  * 常用類別
+    * Action
+    * Property
+    * Protocol
+    * State
+    * Utility
+* 管理Test Case
+  * Mode
+    * Standalone mode
+    * WDIO Testrunner
+* 支援promised
+  * Default promised (內建promised)
+  * Browser object: 一個公用變數, 可以取得公用資訊
+  * Sychronized: 每一行保證promised
+  * Asyncronous 可搭配 await
+### 工具介紹
+* Webdriverio 
+* Browser driver manager
+* Chimp
+### 建構測試環境
+### 快速建立前端測試 & Live demo
+### 關於導入的建議
+* 網站自動化測試，在一個已經上線的網站是否有建議從什麼地方開始做起，新功能或舊功能？
+  * e2e: 10%, integration: 20%, unit: 70%
+  * 從最重要的功能開始
+* 但如果不補單元測試，直接開始寫前端測試會有什麼後果？
+  * 不好維護的測試程式
+  * 難以判斷測試結果
+* 導入是一個組合性的問題
+* 先請RD來建構整個架構
+* 找曾經踩過雷的人
 
 ## Universal JavaScript?(洪名辰)
 
 ## How I learned to stop worrying and love the Polymer toolbox by Monica Dinculescu (Google Inc.)
+* Polymer
 
 ## Reactive Programming In Action with RxJS 5(Paul Taylor)
 
