@@ -32,6 +32,9 @@
   }
   ```
 
+## Tools
+* npm-check-updates
+
 ## QA
 questions
 
