@@ -10,3 +10,4 @@
 
 ## 常見問題
 * [sticky footer](https://css-tricks.com/couple-takes-sticky-footer/)
+* [vertical align content](http://www.hongkiat.com/blog/css-tricks-vertical-align-content/)
