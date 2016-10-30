@@ -1,6 +1,13 @@
 # NeoBundle
 
 ## 安裝
+### 自動安裝
+```bash
+$ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh
+$ sh ./install.sh
+```
+
+### 手動安裝
 1. 建立 bundle 目錄
 ```bash
 $ mkdir -p ~/.vim/bundle
@@ -56,7 +63,7 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ## 常用外掛
 | 名稱 | 描述 |
 | ---- | ----- |
-| Shougo/vimproc | 中等文本 |
+| Shougo/vimproc |  |
 | Shougo/unite.vim |  |
 | Shougo/neocomplcache.vim| 自動補全 |
 | scrooloose/nerdtree | 目錄樹 |
