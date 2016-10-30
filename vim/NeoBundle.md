@@ -54,11 +54,24 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
    ```
 
 ## 常用外掛
-
-### Shougo/vimproc
-
-### scrooloose/nerdtree
-
-### nathanaelkane/vim-indent-guides
+| 名稱 | 描述 |
+| ---- | ----- |
+| Shougo/vimproc | 中等文本 |
+| Shougo/unite.vim |  |
+| Shougo/neocomplcache.vim| 自動補全 |
+| scrooloose/nerdtree | 目錄樹 |
+| scrooloose/syntastic |  |
+| terryma/vim-multiple-cursors | 多行游標 |
+| tpope/vim-commentary | 注釋 |
+| nathanaelkane/vim-indent-guides |  |
+| Valloric/YouCompleteMe |  |
+| Lokaltog/vim-powerline |  |
+| tpope/vim-fugitive |  |
+| othree/eregex.vim |  |
+| Yggdroot/indentLine |  |
+|  |  |
 
 ## Reference
+* https://github.com/Shougo/neobundle.vim
+* https://chusiang.gitbooks.io/working-on-gnu-linux/content/12.vim-plugin-neobundle.html
+* https://www.linuxzen.com/tui-jian-ji-kuan-zui-jin-fa-xian-fei-chang-ku-de-vimcha-jian.html
