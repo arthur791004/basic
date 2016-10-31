@@ -80,5 +80,6 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 ## Reference
 * https://github.com/Shougo/neobundle.vim
+* https://github.com/chusiang/vimrc
 * https://chusiang.gitbooks.io/working-on-gnu-linux/content/12.vim-plugin-neobundle.html
 * https://www.linuxzen.com/tui-jian-ji-kuan-zui-jin-fa-xian-fei-chang-ku-de-vimcha-jian.html
