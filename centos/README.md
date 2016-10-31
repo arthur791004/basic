@@ -21,6 +21,8 @@
   * 設定服務開機自動啟動
 * setenforce/getenforce
   * 關閉 SELinux
+* chsh
+  * 變更預設 SHELL
 
 ## files
 * /etc/rc.d/rc.local
