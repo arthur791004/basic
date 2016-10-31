@@ -13,6 +13,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
+set cursorline
 
 "Use Tab to complete when typing words
 function! Tab_Or_Complete()
