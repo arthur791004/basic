@@ -12,6 +12,31 @@
 * &
   * 提供一種方式執行一个表達式在 parent scope 的上下文中。如果没有指定 attr 名稱，則屬姓名稱為相同的本地名稱。
   * 通常是 function
+  * Example
+  ```js
+  // directive.html
+  <example handle-click="handleClick(param1, param2)" variable="variable"></example>
+  
+  // directive.js
+  angular
+    .module('<module>')
+    .directive('example', exampleDirective);
+
+    /* @ngInject */
+    function exampleDirective() {
+      return {
+        restrict: 'E',
+        scope: {
+          variable: '=',
+          handleClick: '&'
+        },
+        template: '<div ng-click="handleClick({ param1: param1, param2: param2})>{{ variable }}</div>',
+        link: function($scope, $elem, $attrs) {
+          ...
+        }
+      };
+    }
+  ```
 
 ## Reference
 * http://exile1030-blog.logdown.com/posts/168283-customizing-the-angularjs-directive-2
