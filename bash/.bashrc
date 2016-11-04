@@ -1,4 +1,18 @@
 ###################################
+# command history completion
+###################################
+alias code='cd ~/code'
+alias vim='vim -p'
+
+function chdir {
+  cd ~/$1
+}
+
+function dockerbash {
+  docker exec -ti "$1" bash
+}
+
+###################################
 # setup prompt format
 # format:
 #   <username>@<hostname> [<working directory>] (<git branch>)
