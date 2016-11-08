@@ -120,3 +120,6 @@
 | iconv |  |
 | moment | for dates parsing, validating, manipulating, and formatting |
 | ua-parser-js | user agent parser |
+
+## Reference
+* https://github.com/sorrycc/awesome-javascript
