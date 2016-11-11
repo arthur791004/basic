@@ -42,18 +42,27 @@ export default {
 </style>
 ```
 
-## Language Block
-### \<template>
-### \<script>
-### \<style>
+### Language Block
+* \<template>
+* \<script>
+* \<style>
 
-## Src Imports
+### Src Imports
 * 如果想要切割 Vue Component 成多個檔案，可以透過 src attribute 把他們 import 進來
 * Example
 ```html
 <template src="./template.html"></template>
 <script src="./script.js"></script>
 <style src="./style.css"></style>
+```
+
+## Quick Start
+```bash
+npm install -g vue-cli
+vue init webpack-simple <proejct-name>
+cd <proejct-name>
+npm install
+npm run dev # ready to go!
 ```
 
 ## Reference
