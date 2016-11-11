@@ -7,20 +7,20 @@
   * UI/UX
   * 模組化/元件化
   * lazy loading
-  * data flow
+  * data flow
   * offline
   * i18n
-  * css layout
+  * css layout
   * auto testing/CI/CD
   * SEO
-  * 開發工具
-  * 快速學習新知(框架層出不窮...)
+  * 開發工具
+  * 快速學習新知(框架層出不窮...)
   * 瀏覽器支援
   * ...
 * 要學的東西
   * language
     * react, angular2, polymer, vue.js
-  * data flow
+  * data flow
     * flux/redux, RxJS, vuex
   * 開發工具
     * webpack, gulp, grunt
@@ -31,17 +31,17 @@
 * 要注重的東西
   * performance
   * scalability
-    * queue
+    * queue
     * cache
     * storage
     * cluster, HA
     * load balance
   * response time
   * stability
-    * DDoS
-  * security
+    * DDoS
+  * security
     * Buffer overflow, XSS, CSRF, SQL Injection, Command Injection, ...
-  * data structure
+  * data structure
   * cpu
   * memory
   * auto testing/CI/CD
