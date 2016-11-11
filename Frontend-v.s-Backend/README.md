@@ -20,6 +20,8 @@
 * 要學的東西
   * language
     * react, angular2, polymer, vue.js
+  * data flow
+    * flux/redux, RxJS, vuex
   * 開發工具
     * webpack, gulp, grunt
   * css
