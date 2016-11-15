@@ -1,5 +1,27 @@
 # angular2
 
+## 4 types of data binding
+![](https://angular.io/resources/images/devguide/architecture/databinding.png)
+### interpolation binding (內嵌)
+```html
+<!-- variable -->
+<h1>{{ title }}</h1>
+<!-- function -->
+<h2>{{ '現在時間 : ' + getDate() }}</h2>
+```
+### property binding
+```html
+<input type="text" [placeholder]="placeholderText" />
+```
+### event binding
+```html
+<button (click)="addTodo($event)">增加</button>
+```
+### two way binding
+```html
+<input type="text" [(ngModel)]="todoText" />
+```
+
 ## file structure
 | File               | Description                                        |
 | ------------------ | -------------------------------------------------- |
@@ -65,4 +87,5 @@
 
 ## Reference
 * https://dotblogs.com.tw/wellwind
+* https://angular.io/docs/ts/latest/guide/architecture.html#!#data-binding
 * https://github.com/angular/angular-cli
