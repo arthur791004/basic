@@ -7,6 +7,8 @@
 | ctrl + shift + p | command line |
 
 ## Packages
+### atom-beautify
+### Highlight Selected
 ### Remote-FTP
 
 ## Reference
