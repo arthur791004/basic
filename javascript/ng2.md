@@ -1,5 +1,17 @@
 # angular2
 
+## file structure
+| File               | Description                                        |
+| ------------------ | -------------------------------------------------- |
+| angular-cli.json   | angular-cli 設定檔，本上就是一些目錄及打包程式時的設定 |
+| e2e                | 用來存放 end to end 的測試案例                       |
+| karma.conf.js      | Karma 作為 unit test 的設定檔                       |
+| node_modules       | npm modules                                        |
+| protractor.conf.js | protractor 測試相關的設定                           |
+| src                | code                                               |
+| tslint.json        | 針對TypeScript的程式撰寫風格進行規範(linter)的設定檔  |
+| .editorconfig      | 給 IDE 設定來調整你的程式碼風格                      |
+
 ## angular-cli
 
 ### 新增 Project
