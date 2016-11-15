@@ -4,6 +4,7 @@
 
 ### 新增 Project
 * ng new \<project>
+  * --style=sass
 
 ### Generator
 | Scaffold  | Usage |
@@ -29,6 +30,9 @@
 ### Serve
 * HMR 測試
 * ng serve
+  * --host
+  * --port
+  * --live-reload-port
 
 ### Lint
 * 檢查 tslint.json 設定的 TypeScript 撰寫風格的相關限制
@@ -43,6 +47,9 @@
   * 執行 end to end 測試
   * 執行/e2e下面的測試程式
   * karma + protractor
+
+### Others
+* ng set defaults.styleExt scss
 
 ## Reference
 * https://dotblogs.com.tw/wellwind
