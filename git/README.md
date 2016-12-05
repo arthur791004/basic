@@ -83,6 +83,9 @@ git reset --hard HEAD@{<num>}
 ### List number of commit between 2 changeset
 ```git rev-list <new>...<old> --count```
 
+### Without Space
+```git diff --ignore-space-change --ignore-all-space | vim -```
+
 ## reference
 * https://www.slideshare.net/secret/retavuvmp0Vbun
 * http://julianchu.net/2015/11/18-git.html
