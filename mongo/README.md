@@ -23,6 +23,15 @@
   ```js
     mongoose.model('MyModel', mySchema);
   ```
+  * schema types
+    * String
+    * Number
+    * Date
+    * Buffer
+    * Boolean
+    * Mixed
+    * ObjectId
+    * Array
 * methods v.s. statics
   * methods
     * we can call our Model methods when we have an instance of Model
