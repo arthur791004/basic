@@ -23,7 +23,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="\e[1;32m\u@\h\e[0m \e[1;36m[\W]\e[0m \e[1;31m\$(parse_git_branch)\e[0m \n$ "
+export PS1="\e[1;32m\u@\h\e[0m \e[1;36m[\w]\e[0m \e[1;31m\$(parse_git_branch)\e[0m \n$ "
 
 ###################################
 # command history completion
