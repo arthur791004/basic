@@ -11,8 +11,9 @@
 | commit         | svn commit               | git commit [-a]             | hg commit                |  |
 | push           | x                        | git push                    | hg push                  |  |
 | 新增 branch     | ?                       | git branch \<new branch\>   | hg branch \<new branch\>  |  |
-| 切換 branch     | ?                       | git checkout \<branch\>     | hg update -r \<branch\>   |  |
+| 切換 branch     | ?                       | git checkout \<branch\>     | hg update \<branch\>      |  |
 | Push New branch | ?                       | git push -u origin \<branch\> | hg push --new-branch    |  |
+| Merge branch    | ?                       | git merge \<branch\>         | hg merge \<branch\>      |  |
 | 列出 branch     | ?                       | git branch [-a]              | hg branches              |  |
 | diff           | svn diff                 | git diff                     | hg diff                  |  |
 | diff rev       | ?                        | git diff \<rev1\> \<rev2\> -- \<file\> | hg diff -r \<rev1\> -r \<rev2\> \<file\> |   |
