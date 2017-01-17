@@ -3,7 +3,7 @@
 ## 常用功能對照表
 | 功能            | svn                     |   git                       |        hg                | cvs              |
 | -------------- | ----------------------- | --------------------------- | ------------------------ | ---------------- |
-| 複製 Repository | svn checkout \<path\>   | git clone \<path\>          | hg clone \<path\>        | cvs checkout \<src\> |
+| 複製 Repository | svn checkout \<path\>   | git clone \<path\>          | hg clone \<path\>        | cvs checkout \<module\> |
 | 更新 Repository | svn update              | git pull --rebase           | hg pull && hg update -C  | cvs update |
 | 切到特定版本     | svn checkout -r \<rev\> | git reset --hard -r \<rev\> | hg update -C -r \<rev\>  |  |
 | 新增檔案        | svn add \<file path\>    | git add \<file path\>      | hg add \<file path\>      | cvs add \<file path\> |
