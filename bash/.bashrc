@@ -44,3 +44,12 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # add bin of local node_modules
 ###################################
 PATH="$PATH:./node_modules/.bin/"
+
+###################################
+# add .git-completion.bash
+# https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+###################################
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
