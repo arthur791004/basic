@@ -15,12 +15,43 @@ set softtabstop=2
 set autoindent
 set cursorline
 
-"Use Tab to complete when typing words
-function! Tab_Or_Complete()
-  if col('.') > 1 && strpart(getline('.'), col('.') - 2, 3) =~ '^\w'
-    return "\<C-N>"
-  else
-    return "\<Tab>"
-endfunction
-inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-"
+" vim-plug: https://github.com/junegunn/vim-plug
+" Install: curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" cmake: brew install cmake
+" vim: brew install vim
+" tern: touch ~/.tern-config
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'scrooloose/syntastic'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
+
+" Command Maps
+nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
+
+" Settings
+let g:NERDTreeMouseMode=3
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩 '
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
