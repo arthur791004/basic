@@ -17,7 +17,7 @@ set cursorline
 
 " vim-plug: https://github.com/junegunn/vim-plug
 " Install: curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-" cmake: brew install cmake
+" cmake: brew install cmake or yum install cmake python-devel.x86_64
 " vim: brew install vim
 " tern: touch ~/.tern-config
 call plug#begin('~/.vim/plugged')
