@@ -33,6 +33,7 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Command Maps
+nmap <silent> <leader>m :exec &mouse != "" ? "set mouse=" : "set mouse=a"<CR>
 nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
 
 " Settings
